@@ -81,21 +81,21 @@ public class Sudoku {
 		List<Problem> problems = new ArrayList<>();
 		Integer[][] data = new Integer[9][9];
 		
-		String ligne_lue = null;
+		String lineRead = null;
 		try {
 			FileInputStream stream = new FileInputStream(fileName);
 			InputStreamReader isr = new InputStreamReader(stream);
 			BufferedReader reader = new BufferedReader(isr);
 			int rowNumber = 0;
-			while ((ligne_lue = reader.readLine()) != null) {
-				if (ligne_lue.length() != 9) {
+			while ((lineRead = reader.readLine()) != null) {
+				if (lineRead.length() != 9) {
 					Problem problem = new Problem();
 					problem.rowNumber = OptionalInt.of(rowNumber);
-					problem.description = "Not the right characters count on this row (found=" + ligne_lue.length() + ")";
+					problem.description = "Not the right characters count on this row (found=" + lineRead.length() + ")";
 					problems.add(problem);
 				}
-				for (int columnIndex = 0; columnIndex < ligne_lue.length(); columnIndex++) {
-					char c = ligne_lue.charAt(columnIndex);
+				for (int columnIndex = 0; columnIndex < lineRead.length(); columnIndex++) {
+					char c = lineRead.charAt(columnIndex);
 					String s = c + "";
 					if (pattern.matcher(s).matches())
 						data[rowNumber][columnIndex] = "_".equals(s) ? null : Integer.parseInt(s);
@@ -117,10 +117,10 @@ public class Sudoku {
 			}
 			reader.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new RuntimeException(e);
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Ligne : " + ligne_lue);
+			System.out.println("Line : " + lineRead);
 		}
 		
 		BiSupplier<List<Problem>, Integer[][]> result = new BiSupplier<>() {
