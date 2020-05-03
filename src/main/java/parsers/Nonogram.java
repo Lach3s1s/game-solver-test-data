@@ -9,7 +9,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.function.BiPredicate;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -97,30 +96,30 @@ public class Nonogram extends DifferentFormat<CommonChecker.BiSupplier<List<List
         List<String> errors = new ArrayList<>();
         List<List<Integer>> rows = rowsAndColumnsSupplier.getOne();
         List<List<Integer>> columns = rowsAndColumnsSupplier.getTwo();
-        IntStream.rangeClosed(0, rows.size()).forEach(rowId -> checkConstraint(errors, rows.get(rowId), results[rowId], c -> (rowId + 1) + ":" + (c + 1)));
-        IntStream.rangeClosed(0, columns.size()).forEach(columnId -> checkConstraint(errors, columns.get(columnId), Arrays.stream(results).map(row -> row[columnId]).toArray(Integer[]::new), c -> (c + 1) + ":" + (columnId + 1)));
+        IntStream.range(0, rows.size()).forEach(rowId -> checkConstraint(errors, rows.get(rowId), results[rowId], "in row #"+(rowId+1)));
+        IntStream.range(0, columns.size()).forEach(columnId -> checkConstraint(errors, columns.get(columnId), Arrays.stream(results).map(row -> row[columnId]).toArray(Integer[]::new), "in column #"+(columnId+1)));
         return errors;
     }
 
-    private static void checkConstraint(List<String> errors, List<Integer> constraints, Integer[] data, Function<Integer, String> locationFormatter) {
-        int c = 0;
-        Integer currentConstraint = null;
-        int cc = 0;
-        while (c < data.length) {
-            if (data[c] == 0) {
-                if (currentConstraint != null && currentConstraint == 0)
-                    cc++;
-                continue;
-            } else {
-                if (currentConstraint == null)
-                    currentConstraint = constraints.get(cc);
-                currentConstraint--;
-                if (currentConstraint < 0) {
-                    errors.add("Shouldn't have '1' in " + locationFormatter.apply(c));
-                    break;
-                }
+    private static void checkConstraint(List<String> errors, List<Integer> constraints, Integer[] data, String forLog) {
+        int[] sums = new int[data.length];
+        int counter = 0;
+        for (Integer datum : data) {
+            if(datum == 0) {
+                if(sums[counter] > 0)
+                    counter++;
             }
-            c++;
+            else { // 1
+                sums[counter]++;
+            }
+        }
+        int[] collect = Arrays.stream(sums).filter(v -> v > 0).toArray();
+        if(constraints.size() != collect.length)
+            errors.add("Different number of constraints "+forLog+": expected="+constraints.size()+", found="+collect.length);
+
+        for (int i = 0; i < constraints.size(); i++) {
+            if(constraints.get(i) != collect[i])
+                errors.add("Different value for constraint #"+(i+1)+" "+forLog+": expected="+constraints.get(i)+", found="+collect[i]);
         }
     }
 
