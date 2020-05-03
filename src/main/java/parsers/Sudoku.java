@@ -1,30 +1,14 @@
 package parsers;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.OptionalInt;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
+import java.io.*;
+import java.util.*;
 import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.regex.Pattern;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Sudoku {
+public class Sudoku extends CommonChecker {
 	public static void main(String[] args) {
 		Map<String, BiSupplier<List<Problem>, Integer[][]>> fileNameToData = Arrays.stream(new File("sudoku/").listFiles())
 				.map(File::getPath)
@@ -201,12 +185,7 @@ public class Sudoku {
 					'}';
 		}
 	}
-	
-	private interface BiSupplier<T, U> {
-		T getOne();
-		U getTwo();
-	}
-	
+
 	private static void analyzeStructure(Integer[][] data, List<Problem> problems,
 			Supplier<IntStream> rowGenerator, Supplier<IntStream> columnGenerator,
 			Supplier<String> forDescription) {
@@ -252,23 +231,6 @@ public class Sudoku {
 		return IntStream.range(initial, initial + 3); // 3 values per dimension in square
 	}
 	
-	private static void crossStreams(Supplier<IntStream> stream1, Supplier<IntStream> stream2, BiConsumer<Integer, Integer> biConsumer) {
-		stream1.get().forEach(first -> stream2.get().forEach(second -> biConsumer.accept(first, second)));
-	}
-	
-	private static <R> List<R> crossStreamsWithResult(Supplier<IntStream> stream1, Supplier<IntStream> stream2, BiFunction<Integer, Integer, Optional<R>> biFunction) {
-		return stream1.get()
-				.mapToObj(first ->
-						stream2.get()
-								.mapToObj(second -> biFunction.apply(first, second))
-								.filter(Optional::isPresent)
-								.map(Optional::get)
-								.collect(Collectors.toList())
-				)
-				.flatMap(List::stream)
-				.collect(Collectors.toList());
-	}
-	
 	private static List<BiSupplier<Integer, Integer>> compareData(Integer[][] resData, Integer[][] srcData) {
 		return
 			crossStreamsWithResult(
@@ -277,38 +239,11 @@ public class Sudoku {
 				(row, column) -> {
 					if (srcData[row][column] != null) {
 						if (!resData[row][column].equals(srcData[row][column])) {
-							return Optional.of(
-									new BiSupplier<Integer, Integer>() {
-										public Integer getOne() {
-											return row;
-										}
-										
-										public Integer getTwo() {
-											return column;
-										}
-									}
-							);
+							return Optional.of(buildBiSupplier(row, column));
 						}
 					}
-					return Optional.<BiSupplier<Integer, Integer>>empty();
+					return Optional.empty();
 				});
 	}
-	
-	private static <T, K, U, M extends Map<K, U>>	Collector<T, ?, M> collectorToMap(Function<? super T, ? extends K> keyMapper, Function<? super T, ? extends U> valueMapper, Supplier<M> mapFactory) {
-		return Collectors.toMap(keyMapper, valueMapper, (x, y) -> x, mapFactory);
-	}
-	
-	
-	private static <K, V> Map<Map.Entry<K, V>, Optional<V>> extractMappedData(Map<K, V> inputMap, Predicate<K> keeper, Function<K, K> replacer) {
-		return inputMap
-				.entrySet()
-				.stream()
-				.filter(e -> keeper.test(e.getKey()))
-				.collect(
-						collectorToMap(
-								Function.identity(),
-								entry -> Optional.ofNullable(inputMap.get(replacer.apply(entry.getKey()))),
-								LinkedHashMap::new)
-				);
-	}
+
 }

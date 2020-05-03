@@ -12,6 +12,15 @@
         <maven.compiler.source>1.10</maven.compiler.source>
         <maven.compiler.target>1.10</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
     <!--plugins>
         <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -27,15 +36,58 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <!--version>1.1.1</version-->
+                <version>1.6.0</version>
                 <executions>
                     <execution>
+                        <id>Sudoku</id>
                         <phase>test</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
                         <configuration>
                             <mainClass>parsers.Sudoku</mainClass>
+                            <!--arguments>
+                                <argument>arg0</argument>
+                                <argument>arg1</argument>
+                            </arguments-->
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Kemaru</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>parsers.Kemaru</mainClass>
+                            <!--arguments>
+                                <argument>arg0</argument>
+                                <argument>arg1</argument>
+                            </arguments-->
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Matoku</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>parsers.Matoku</mainClass>
+                            <!--arguments>
+                                <argument>arg0</argument>
+                                <argument>arg1</argument>
+                            </arguments-->
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Nonogram</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>parsers.Nonogram</mainClass>
                             <!--arguments>
                                 <argument>arg0</argument>
                                 <argument>arg1</argument>
