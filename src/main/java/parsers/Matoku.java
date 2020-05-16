@@ -9,8 +9,13 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Matoku extends AreaBased {
+    private static final String propertiesFileName = "matoku.properties";
+
+    private static final String intercells = "separator.inter-cells";
+    private static final String keyvalues = "separator.key-values";
+
     public Matoku(String pathName) {
-        super(pathName);
+        super(pathName, propertiesFileName);
     }
 
     public static void main(String[] args) {
@@ -19,13 +24,27 @@ public class Matoku extends AreaBased {
 
     protected List<String> extractCells(List<String> rules) {
         return rules.stream()
-                .map(line -> Arrays.stream(line.split("=")[0].split("\\+")))
+                .map(line -> Arrays.stream(line.split(properties.getProperty(keyvalues))[0].split(properties.getProperty(intercells))))
                 .flatMap(Function.identity())
                 .collect(Collectors.toList());
     }
 
     protected void processSourceData(List<String> rules, List<String> errors) {
-        // TBD ?
+        rules.forEach(rule -> {
+            String[] split = rule.split(properties.getProperty(keyvalues));
+            String[] operands = split[0].split(properties.getProperty(intercells));
+            try {
+                Operation operation = Operation.ofSymbol(split[1].substring(0, 1));
+                Integer.parseInt(split[1].substring(1)); // for potential exception
+
+                if(operands.length == 1) {
+                    if (operation != Operation.EQUAL)
+                        throw new RuntimeException("Bad config: " + rule);
+                }
+            } catch (Exception e) {
+                errors.add(e.getMessage());
+            }
+        });
     }
 
     protected void extraChecksOnResults(List<String> lines, Integer[][] values, List<String> errors) {
@@ -46,8 +65,8 @@ public class Matoku extends AreaBased {
     }
 
     protected void specificCheckOnAreaFilling(String rule, Integer[][] results, List<String> errors) {
-        String[] split = rule.split("=");
-        String[] operands = split[0].split("\\+");
+        String[] split = rule.split(properties.getProperty(keyvalues));
+        String[] operands = split[0].split(properties.getProperty(intercells));
         Operation operation = Operation.ofSymbol(split[1].substring(0, 1));
         int value = Integer.parseInt(split[1].substring(1));
 
@@ -70,7 +89,7 @@ public class Matoku extends AreaBased {
     }
 
     private enum Operation {
-        PLUS("+", 0, Integer::sum), MINUS("-", 0, (one, two) -> Math.abs(one - two)), MULTIPLY("x", 1, (one, two) -> one * two),
+        PLUS("+", 0, Integer::sum), MINUS("-", 0, (one, two) -> Math.abs(one - two)), MULTIPLY("x", 1, (one, two) -> one * two), DIVIDE("/", 1, (one, two) -> Math.max(one, two) / Math.min(one, two)),
         EQUAL("~", 0, (one, two) -> one);
 
         final String symbol;
@@ -87,7 +106,7 @@ public class Matoku extends AreaBased {
             return Arrays.stream(Operation.values())
                     .filter(operation -> operation.symbol.equals(symbol))
                     .findFirst()
-                    .orElseThrow();
+                    .orElseThrow(() -> new RuntimeException("Unknown symbol: '"+symbol+"'"));
         }
     }
 }

@@ -1,20 +1,34 @@
 package parsers;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 import java.util.stream.IntStream;
 
 public abstract class AreaBased extends DifferentFormat<List<String>> {
 
-    AreaBased(String pathName) {
+    final Properties properties;
+
+    AreaBased(String pathName, String propertiesFileName) {
         super(pathName);
+        try {
+            properties = readProperties(propertiesFileName);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static Properties readProperties(String fileName) throws Exception {
+        InputStream input = new FileInputStream(fileName);
+        Properties prop = new Properties();
+
+        // load a properties file
+        prop.load(input);
+
+        return prop;
     }
 
     /**
@@ -60,9 +74,9 @@ public abstract class AreaBased extends DifferentFormat<List<String>> {
 
         crossStreams(() -> IntStream.rangeClosed(0, maxRowNumber), () -> IntStream.rangeClosed(0, maxColNumber), (row, col) -> {
             if (counts[row][col] > 1)
-                errors.add("Found the same cell several times (" + counts[row][col] + "): " + LineName.byIndex(row + 1) + (col + 1));
+                errors.add("Found the same cell several times (" + counts[row][col] + "): " + indexToRowName(row + 1) + (col + 1));
             else if (counts[row][col] == 0)
-                errors.add("Didn't find the cell: " + LineName.byIndex(row + 1) + (col + 1));
+                errors.add("Didn't find the cell: " + indexToRowName(row + 1) + (col + 1));
         });
 
         processSourceData(rules, errors);
@@ -76,7 +90,7 @@ public abstract class AreaBased extends DifferentFormat<List<String>> {
 
     protected abstract List<String> extractCells(List<String> rules);
 
-    private static final Function<String, Integer> extractRowNumber = cellId -> LineName.valueOf(cellId.substring(0, 1)).index - 1;
+    private static final Function<String, Integer> extractRowNumber = cellId -> rowNameToIndex(cellId.substring(0, 1)) - 1;
     private static final Function<String, Integer> extractColumnNumber = cellId -> Integer.valueOf(cellId.substring(1)) - 1;
 
     final Function<String, Integer> findRowNumber = cellIdExtractor().andThen(extractRowNumber);
@@ -92,17 +106,22 @@ public abstract class AreaBased extends DifferentFormat<List<String>> {
 
     protected abstract void specificCheckOnAreaFilling(String rule, Integer[][] results, List<String> errors);
 
-    protected enum LineName {
-        A(1), B(2), C(3), D(4), E(5), F(6);
-
-        private final int index;
-
-        LineName(int index) {
-            this.index = index;
-        }
-
-        static LineName byIndex(int index) {
-            return Arrays.stream(values()).filter(v -> v.index == index).findFirst().orElseThrow();
-        }
+    /**
+     * Converts an integer into a char
+     * @param index: int greater than 0 (starts to 1)
+     * @return the corresponding character (A, B, C...)
+     */
+    private static char indexToRowName(int index) {
+        return (char) (index + 64); // 65 = A
     }
+
+    /**
+     * Converts a string into an int
+     * @param name: a one character string
+     * @return the corresponding int code (A=65, B=66, ...)
+     */
+    private static int rowNameToIndex(String name) {
+        return (int) name.charAt(0) - 64;
+    }
+
 }

@@ -1,0 +1,36 @@
+{
+  "rows": [
+    { "values": [3,3] },
+    { "values": [11] },
+    { "values": [2,7] },
+    { "values": [11] },
+    { "values": [1,2,4] },
+    { "values": [3,4] },
+    { "values": [1,1,6] },
+    { "values": [1,11] },
+    { "values": [1,2,4,1] },
+    { "values": [2,1,1,1,2] },
+    { "values": [4,1,1] },
+    { "values": [1,6,3] },
+    { "values": [5,6] },
+    { "values": [1,1,1,2] },
+    { "values": [5,3] }
+  ],
+  "columns": [
+    { "values": [3] },
+    { "values": [9] },
+    { "values": [2,1,1,1] },
+    { "values": [2,4,5] },
+    { "values": [4,1,1,1,1] },
+    { "values": [3,2,3,1] },
+    { "values": [12,1] },
+    { "values": [8,4] },
+    { "values": [8,1,1,1] },
+    { "values": [9,2] },
+    { "values": [3,3,2] },
+    { "values": [5,2] },
+    { "values": [2,2,1] },
+    { "values": [1,1,4] },
+    { "values": [8] }
+  ]
+}
