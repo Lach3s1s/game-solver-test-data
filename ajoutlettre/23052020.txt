@@ -1,0 +1,12 @@
+// "A peine visible"
+FRUIT + F
+// "Forte correction"
+PERTE + M
+// "Style négligé"
+GRENU + G
+// "Figé dans la graisse"
+NOCIF + T
+
+OUAILLE, BROUTER, BRUYANT, EMPILER, DERIVER
+
+BLECHE, FRANCO, STALLE, COUCHE, PANSER

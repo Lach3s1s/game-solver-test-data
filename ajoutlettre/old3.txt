@@ -1,0 +1,12 @@
+// "Travail accompli"
+OUVRE + E
+// "De boue ou fatigué"
+SUAVE + X
+// "Trait de Scapin"
+BOEUF + R
+// "Mollusque à trompette"
+ROTIN + T
+
+BEGAYER, CROQUET, TESTEUR, LANCIER, TUNIQUE
+
+PAITRE, POIVRE, PLIAGE, BOUCHE, MENTAL

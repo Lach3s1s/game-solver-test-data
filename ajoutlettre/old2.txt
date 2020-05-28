@@ -1,0 +1,12 @@
+// "Il imite les brindilles"
+HAMPE + P
+// "Manque d'appétit"
+DOGUE + T
+// "Tel un vent de face"
+DOUTE + B
+// "Empêcheur de tourner en rond"
+GRENU + E
+
+MODULER, CREPIER, SAUTEUR, MOITEUR, POTIRON
+
+PALEUR, TERTRE, LASSIS, AVERSE, TESTER

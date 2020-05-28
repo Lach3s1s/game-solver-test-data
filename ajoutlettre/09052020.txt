@@ -1,0 +1,12 @@
+// "Remue les choses"
+BASER + S
+// "Mieux vaut la manger plutôt que d'y tomber"
+PANDA + E
+// "Lame du camp"
+LOPIN + E
+// "Discours de circonstance"
+PECHE + S
+
+RESIGNE, ORANGER, BARAQUE, GALERIE, FORMANT
+
+TARDIF, FOUGUE, DOSEUR, QUARTZ, MIELLE

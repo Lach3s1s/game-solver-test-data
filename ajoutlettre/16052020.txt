@@ -1,0 +1,12 @@
+// "Être dévolu par le sort"
+ROCHE + I
+// "Cocktail anisé"
+TOTEM + A
+// "Tire très vite"
+IDOLE + B
+// "Part au régiment"
+INTRO + A
+
+POSTIER, CROCHET, BAROQUE, CLASSER, PACKAGE
+
+SOUPER, PRESTE, TROUER, ARRETE, MARCHE
