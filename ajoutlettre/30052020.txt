@@ -1,0 +1,12 @@
+// "Filtrer un liquide"
+PUREE + R
+// Il fait rire jaune
+TARTE + R
+// Poisson marin
+FLANE + T
+// Donner un aspect défraîchi
+PRIER + F
+
+CRISPER, OUVRIER, SAUTEUR, DERIVER, RAPPORT
+
+EVIDER, PIETON, ROULER, COULPE, FLUORE
