@@ -1,0 +1,12 @@
+// "Tas de bois"
+HERBU + C
+// "Art du DJ"
+MAGIE + X
+// "Epreuve de poids"
+RANCE + L
+// "Jamais atteint"
+CORDE + R
+
+CAVISTE, BARAQUE, CLAMEUR, JUMELLE, DERIVEE
+
+FRIPER, DOUCHE, CARIER, LOUEUR, MAIGRE

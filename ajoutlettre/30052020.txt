@@ -1,10 +1,10 @@
 // "Filtrer un liquide"
 PUREE + R
-// Il fait rire jaune
+// "Il fait rire jaune"
 TARTE + R
-// Poisson marin
+// "Poisson marin"
 FLANE + T
-// Donner un aspect défraîchi
+// "Donner un aspect défraîchi"
 PRIER + F
 
 CRISPER, OUVRIER, SAUTEUR, DERIVER, RAPPORT
