@@ -1,0 +1,12 @@
+// "Terrain de souches québécois"
+BASTA + I
+// "Congé non payé"
+VOIRE + N
+// "Il fait tourner la terre"
+PITRE + O
+// "Nuages en dépression"
+VOTER + X
+
+BLAGUER, DEMENTI, DESSERT, CRIQUET, PEINARD
+
+TRIBUT, ROUSSE, FRELON, BASTON, DUVETE
