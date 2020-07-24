@@ -17,7 +17,7 @@ public abstract class DifferentFormat<Source> extends CommonChecker implements R
     public void run() {
         Map<String, BiSupplier<List<String>, Source>> fileNameToData = Arrays.stream(new File(pathName).listFiles())
                 .map(File::getPath)
-                .filter(fileName -> !fileName.endsWith("_res.txt"))
+                .filter(fileName -> !fileName.endsWith("_res.txt") && !fileName.endsWith("_computed.txt"))
                 .collect(collectorToMap(Function.identity(), this::checkSourceFile, LinkedHashMap::new));
 
         Map<String, BiSupplier<List<String>, Integer[][]>> fileNameToDataRes = Arrays.stream(new File(pathName).listFiles())
