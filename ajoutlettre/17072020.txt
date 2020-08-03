@@ -6,3 +6,16 @@ ENNEMI + T
 BLOUSE + L
 
 POELEE + M
+
+
+RUT + F
+SUC + T
+SUS + O
+
+FILS + U
+TOME + B
+BOUT + A
+
+RUBAN + T
+GAZON + E
+MOULE + V
