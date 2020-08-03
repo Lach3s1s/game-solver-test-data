@@ -94,6 +94,20 @@
                             </arguments-->
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>Takuzu</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>parsers.Takuzu</mainClass>
+                            <!--arguments>
+                                <argument>arg0</argument>
+                                <argument>arg1</argument>
+                            </arguments-->
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
