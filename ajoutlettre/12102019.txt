@@ -1,0 +1,12 @@
+// "Décor à tifs"
+RESTE + S
+// "Nouvelle version"
+ARMEE + K
+// "C'est un gamin"
+CHOME + I
+// "Pour tout, ce n'est pas rien"
+LOTTE + I
+
+CROCHER, TEINDRE, VAUTOUR, PLANETE, TRAITRE
+
+GREVER, ROUAGE, POTELE, GLANDE, GRATIN
