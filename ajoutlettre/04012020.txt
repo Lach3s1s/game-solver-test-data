@@ -1,0 +1,12 @@
+// Quel toupet !"
+POUPE + H
+// "Qui étale son savoir"
+ADENT + P
+// "Poivrée en aromate"
+THEME + N
+// "En a plus d'un titre"
+SERPE + S
+
+FACTUEL, OMETTRE, FLASQUE, FRISSON, ECHASSE
+
+BRIDGE, POUPEE, PESAGE, PLAINE, ARGENT

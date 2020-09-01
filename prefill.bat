@@ -3,10 +3,10 @@
 SET /A ARGS_COUNT=0
 FOR %%A in (%*) DO SET /A ARGS_COUNT+=1
 @echo on
-ECHO %ARGS_COUNT%
+ECHO Reading %ARGS_COUNT% arguments
 @echo off
 
-SET /A mydate=%1
+SET mydate=%1
 
 IF %ARGS_COUNT% == 0 (
     @echo on
@@ -15,7 +15,7 @@ IF %ARGS_COUNT% == 0 (
 ) ELSE (
     IF %ARGS_COUNT% == 1 (
         for %%x in (facile, difficile, diabolique) do (
-            copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%12020_%%x.txt
+            copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%mydate%2020_%%x.txt
         )
     ) ELSE (
         goto myloop
