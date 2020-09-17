@@ -1,0 +1,12 @@
+// "Au top du top"
+SURIN + F
+// "Eminence à la campagne"
+TERRE + T
+// "Formule d'évasion"
+AMANT + R
+// "Plaisir de la débauche"
+LUXER + U
+
+DESSERT, IONIQUE, LOUCHER, TAILLER, PEINARD
+
+ROUBLE, PLANER, RAIDER, MANCHE, CLISSE

@@ -1,0 +1,12 @@
+// "Vue de l'extérieur"
+HORDE + S
+// "Proche de la guigne"
+SOSIE + P
+// "A l'oeil"
+SITAR + G
+// "Il fait tourner la terre"
+POIRE + T
+
+LIMPIDE, ORANGER, TITRAGE, ECOUTER, BLOCAGE
+
+FUSANT, ISOLER, ARAIRE, APLATI, BASTON
