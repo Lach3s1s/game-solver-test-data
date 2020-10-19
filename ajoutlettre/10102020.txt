@@ -1,0 +1,12 @@
+// "Spécialiste de la planche"
+NUAGE + R
+// "Foncer à la plage"
+BURIN + R
+// "Victime de la folie"
+NORIA + S
+// "Mal de gorge"
+TIGRE + O
+
+PIGMENT, COASSER, CHINEUR, BLONDIR, CHOMEUR
+
+ROUBLE, RASEUR, GREVER, HANCHE, PERIME

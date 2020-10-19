@@ -1,0 +1,12 @@
+// "Homme entretenu"
+IGLOO + G
+// "Dévoreur de tommes"
+SEUIL + R
+// "N'a pas une taille de guèpe"
+FLORE + N
+// "Parole de bon augure"
+CLORE + A
+
+FACTION, CROQUER, GEINDRE, PEIGNER, PIONCER
+
+APPART, MASSUE, SORTIE, BISQUE, CERISE
