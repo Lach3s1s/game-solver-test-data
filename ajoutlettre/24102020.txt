@@ -1,0 +1,14 @@
+// "Après deux points"
+TITRE + O
+// "Engin de démolition"
+PRIER + P
+// "Qui concerne un système interne"
+AULNE + R
+// "Il fonce"
+IDOLE + B
+
+// encas, car "appart"
+DERAPER, RONDEUR, CROQUER, APPARAT, BRASSER
+
+// maths
+RAMPER, ARAIRE, METTRE, CHLORE, LIEUSE

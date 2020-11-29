@@ -1,0 +1,12 @@
+// "Femme monstrueuse"
+PHARE + I
+// "Ouvrage didactique"
+TARTE + I
+// "Bénir ou blasphémer"
+CASER + R
+// "Au pied du mur"
+ESSAI + S
+
+PALLIER, ALESEUR, ENLEVER, AMENDER, GROUPIE
+
+CALMER, MOIRER, EVITER, ENTIER, FLOUER

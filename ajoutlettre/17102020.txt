@@ -1,0 +1,12 @@
+// "Travailler le bois"
+RONCE + P
+// "Dans la marne"
+AIGLE + S
+// "Agent de liaison"
+MINCE + T
+// "Billet doux"
+LOUPE + T
+
+SILENCE, GROUPER, FRAISER, POMPIER, VERNIER
+
+DELICE, CROISE, ESSAIM, SOMBRE, ECLAIR
