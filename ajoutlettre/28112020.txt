@@ -1,0 +1,12 @@
+// "Mentionné auparavant"
+TISSU + D
+// "Même pas touché"
+TITAN + C
+// "C'est une déception si elle nous laisse au sec"
+COUDE + H
+// "Cadet de Felipe VI"
+TANIN + F
+
+PALMIER, PONDERE, RETABLI, CONFLIT, CREPIER
+
+FLAQUE, FEERIE, CRASSE, MESSIE, PALEUR

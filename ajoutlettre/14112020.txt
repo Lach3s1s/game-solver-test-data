@@ -1,0 +1,12 @@
+// "Association qui date"
+DEUIL + G
+// "Repos religieux du samedi"
+BASTA + B
+// "De boue ou fatigué"
+SUAVE + X
+// "Prendre le pouls"
+RONDE + S
+
+DESSEIN, DICTION, ADVENIR, CANETON, BRAILLE
+
+PHASME, VIOLET, DINGUE, PAROLE, SALUER

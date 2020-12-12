@@ -11,6 +11,13 @@ IF %ARGS_COUNT% == 0 (
     ECHO Missing arguments
     @echo off
 ) ELSE (
+    set str=%1
+    FOR /F %%G IN ('DIR /b /s %str%') DO (
+        @echo on
+        echo Processing %%G
+        @echo off
+    )
+    pause
 	goto myloop
 )
 
@@ -46,11 +53,10 @@ IF "%input%" == "" (
 	goto End
 )
 
-@echo on
-echo input file: %input%
+REM @echo on
+REM echo input file: %input%
+REM @echo off
 
-
-@echo off 
 set res=%input:computed=res%
 @echo on
 echo result file: %res%
@@ -60,6 +66,8 @@ IF NOT EXIST %res% (
 	move %input% %res%
 	git add %res%
 ) ELSE (
+    @echo on
 	ECHO Do not erase existing file!
+	@echo off
 )
 :End
