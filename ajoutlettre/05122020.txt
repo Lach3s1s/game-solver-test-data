@@ -1,0 +1,12 @@
+// "Monter des oeufs en neige"
+TARTE + B
+// "Couleur poisson"
+MAOUS + N
+// "Bâton d'argent"
+ROCHE + T
+// "Il est très regardant"
+PARTI + A
+
+MOIGNON, OUAILLE, MARINER, PLANTER, BARAQUE
+
+CORSER, FAILLE, SABLER, SOUPER, HEURTE

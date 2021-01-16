@@ -1,0 +1,12 @@
+// "Honneur mis en jeu"
+FURIE + G
+// "Face mignonne"
+MOINS + I
+// "Franchir un cap"
+REPAS + S
+// "Sous le nez et à la barbe"
+TONNE + M
+
+PILLAGE, HABITUE, PENSEUR, CASSURE, LACHEUR
+
+ARPETE, PLIQUE, AVOINE, MIREUR, BOUCLE
