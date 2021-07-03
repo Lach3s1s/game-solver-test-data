@@ -1,0 +1,12 @@
+// "Pose d'engins destructeurs"
+MANIE + G
+// "Sujet à l'inquiétude"
+LUBIE + X
+// "Seul au monde"
+QUINE + U
+// "Eliminer les pépins"
+DRONE + M
+
+MEPRISE, ALIGNER, MIRETTE, EMPATER, CREPIER
+
+ABIMER, RASSIS, SORTIE, BISSER, PARTIE

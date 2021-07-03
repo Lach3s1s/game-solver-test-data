@@ -1,0 +1,12 @@
+// "Dévisser"
+HEURT + C
+// "Parler occitan"
+CONGA + S
+// "Il s'épand sur le champ"
+FURIE + M
+// "Sorte de train"
+ALLER + U
+
+MALAISE, VIVABLE, BORDIER, CREPIER, CROUTER
+
+CORDON, RADIAN, CORNET, EPILER, CRASSE

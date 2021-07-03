@@ -1,0 +1,12 @@
+// "Partie de dames"
+VOIRE + A
+// "Miraculeuse à Lourdes"
+ERGOT + T
+// "Texte de censure"
+MINOT + O
+// "Gourde au potager"
+ROUGE + C
+
+OCTANTE, MAILLET, DECALER, PILLAGE, ORIENTE
+
+MAIRIE, TANCHE, TARDER, PEIGNE, EXPIER

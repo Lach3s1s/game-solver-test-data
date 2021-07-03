@@ -1,0 +1,12 @@
+// "Mal de vivres"
+MANIF + E
+// "Entrer dans la danse"
+SALER + V
+// "Preneur de son"
+DAUBE + T
+// "Est ouvert pour le service"
+SEMIS + L
+
+FALAISE, ETANCHE, FRONCER, PATIENT, GRAVIER
+
+TABLER, LAINER, TRICHE, AILLER, PATERE

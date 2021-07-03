@@ -1,0 +1,12 @@
+// "Une chaussure dans la rue"
+LOGER + L
+// "Science d'expériences"
+MICHE + I
+// "Poseur de mines"
+REPAS + U
+// "Paquet d'effets"
+ATOLL + B
+
+MUSETTE, GOUSSET, DERIVER, CHEVELU, PEINARD
+
+CREMER, DOUCHE, PRISME, ETIAGE, GENOME

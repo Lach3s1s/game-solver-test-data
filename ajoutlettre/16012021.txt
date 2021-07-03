@@ -1,0 +1,12 @@
+// "Le goût du faux"
+ASTRE + Z
+// "Il fait corps"
+PURGE + O
+// "Pair ou impair"
+BROME + N
+// "Instrument à vent"
+OPTER + M
+
+PERCHER, CASAQUE, FOURNIL, CANTINE, PONDERE
+
+SORTIE, LIEVRE, CRECHE, EVITER, ECURER

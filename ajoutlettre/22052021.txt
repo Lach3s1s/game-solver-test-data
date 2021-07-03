@@ -1,0 +1,12 @@
+// "Comme le rat des villes"
+BURIN + A
+// "Protection pour le chef"
+SAUCE + Q
+// "Être au-dessus de ses soucis"
+PANEL + R
+// "Le bavard ne le ferme pas"
+PACTE + L
+
+ECORCHE, COURAGE, PARTAGE, BEGUINE, PILLAGE
+
+CHARME, LAINER, CANCRE, LACHER, GOURDE

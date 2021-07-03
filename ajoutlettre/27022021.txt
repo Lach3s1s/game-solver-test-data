@@ -1,0 +1,12 @@
+// "Fruit à fouler"
+AINSI + R
+// "Le temps d'un coup d'oeil"
+FRUIT + F
+// "Ca prend à la gorge"
+GAINE + N
+// "Bout de noyau"
+PORTO + N
+
+BLOCAGE, ASOCIAL, FORMAGE, GRIMPER, BEGUINE
+
+PALACE, CUIVRE, REGALE, GRAVER, MURIER

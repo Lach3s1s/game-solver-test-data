@@ -1,0 +1,12 @@
+// "Musique de pub"
+LINGE + J
+// "Une foule de gens"
+PULPE + E
+// "Caprice de fan"
+CADET + O
+// "Travailler avec des fils"
+ANTRE + T
+
+CHOPINE, MANAGER, FEINDRE, PANTOIS, DERIVER
+
+BOUCLE, CHARME, BAREME, DINGUE, TOISON

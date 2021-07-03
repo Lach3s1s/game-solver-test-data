@@ -1,0 +1,12 @@
+// "Mosaïque des rues"
+AGAVE + P
+// "Oiseau casqué"
+OSCAR + A
+// "En second lieu"
+DOUZE + I
+// "Prendre de haut"
+SOBRE + N
+
+TROUVER, EPINARD, CAPTEUR, RAVINER, EMOTION
+
+SURJET, COLORE, SKIEUR, EMEUTE, CROSSE

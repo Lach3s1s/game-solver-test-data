@@ -1,0 +1,12 @@
+// "Il parfume la pizza"
+GIRON + A
+// "Un homme de la Somme"
+PARDI + C
+// "Elle divise la cellule"
+MOITE + S
+// "Pas d'humeur"
+BONGO + U
+
+CLOUTER, PRIMATE, VAUTOUR, MIRETTE, BELETTE
+
+RAFLER, PELAGE, GANDIN, POSTER, BLONDE

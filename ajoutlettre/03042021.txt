@@ -1,0 +1,12 @@
+// "Ecrit moqueur"
+TIARE + S
+// "Acte manqué"
+PARMI + I
+// "Il prend le train"
+SAUGE + R
+// "Volier les fenêtres"
+BRUME + E
+
+COUSSIN, LANCEUR, PARJURE, BASSINE, BEIGNET
+
+FEERIE, CROULE, BLONDE, MAITRE, TUTEUR

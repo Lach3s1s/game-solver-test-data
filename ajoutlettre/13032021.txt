@@ -1,0 +1,12 @@
+// "Pastille noire"
+COUAC + H
+// "L'homme à battre"
+ULTRA + B
+// "Boîte à roulettes"
+SCION + A
+// "Prendre à coup de bec"
+PHARE + P
+
+PLISSER, ETIRAGE, GLACIER, MALAISE, DERAPER
+
+GENDRE, TOISON, CAUSER, EVIDER, ETALON

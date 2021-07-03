@@ -15,8 +15,8 @@ IF %ARGS_COUNT% == 0 (
 ) ELSE (
     IF %ARGS_COUNT% == 1 (
         for %%x in (facile, difficile, diabolique) do (
-            IF NOT EXIST sudoku\sudoku_%mydate%2020_%%x.txt (
-                copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%mydate%2020_%%x.txt
+            IF NOT EXIST sudoku\sudoku_%mydate%2021_%%x.txt (
+                copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%mydate%2021_%%x.txt
             ) ELSE (
                 ECHO Do not erase existing file!
             )
@@ -35,7 +35,7 @@ IF "%1" == "" (
 )
 @echo on
 IF NOT EXIST sudoku\sudoku_%mydate%2020_%1.txt (
-	copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%mydate%2020_%1.txt
+	copy sudoku_DDMM2020_TYPE.txt sudoku\sudoku_%mydate%2021_%1.txt
 ) ELSE (
 	ECHO Do not erase existing file!
 )
