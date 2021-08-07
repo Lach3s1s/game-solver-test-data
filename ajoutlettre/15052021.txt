@@ -1,0 +1,12 @@
+// "Endormir de paroles"
+REBEC + R
+// "Garde la main au chaud"
+FOULE + M
+// "Du noir sur les plages"
+MATOU + Z
+// "Emouvoir l'auditoir"
+MURER + E
+
+RECUEIL, MACHINE, VIBRAGE, BECHEUR, CRISSER
+
+ANIMER, EMEUTE, DAGUET, GARDER, PERIME
