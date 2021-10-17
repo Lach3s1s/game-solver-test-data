@@ -1,0 +1,12 @@
+// "Espace pour des reliques"
+TYPER + C
+// "Exemple de souplesse résistante"
+SOEUR + A
+// "Le temps du greffe"
+MUTIN + E
+// "Clou double"
+MANTE + D
+
+BRASSER, VOLTAGE, AVALOIR, FORGEUR, ORIENTE
+
+ADORER, MAIRIE, PALIER, CRIEUR, BAFFLE
