@@ -7,6 +7,7 @@ ECHO Reading %ARGS_COUNT% arguments
 @echo off
 
 SET mydate=%1
+SET year=2022
 
 IF %ARGS_COUNT% == 0 (
     @echo on
@@ -15,8 +16,8 @@ IF %ARGS_COUNT% == 0 (
 ) ELSE (
     IF %ARGS_COUNT% == 1 (
         for %%x in (facile, difficile, diabolique) do (
-            IF NOT EXIST sudoku\sudoku_%mydate%2021_%%x.txt (
-                copy sudoku_DDMMYYYY_TYPE.txt sudoku\sudoku_%mydate%2021_%%x.txt
+            IF NOT EXIST sudoku\sudoku_%mydate%%year%_%%x.txt (
+                copy sudoku_DDMMYYYY_TYPE.txt sudoku\sudoku_%mydate%%year%_%%x.txt
             ) ELSE (
                 ECHO Do not erase existing file!
             )
@@ -34,8 +35,8 @@ IF "%1" == "" (
     goto myfin
 )
 @echo on
-IF NOT EXIST sudoku\sudoku_%mydate%2021_%1.txt (
-	copy sudoku_DDMMYYYY_TYPE.txt sudoku\sudoku_%mydate%2021_%1.txt
+IF NOT EXIST sudoku\sudoku_%mydate%%year%_%1.txt (
+	copy sudoku_DDMMYYYY_TYPE.txt sudoku\sudoku_%mydate%%year%_%1.txt
 ) ELSE (
 	ECHO Do not erase existing file!
 )

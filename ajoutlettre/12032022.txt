@@ -1,0 +1,12 @@
+// "D'un style lourd"
+TAUPE + X
+// "Du blanc pour le peintre"
+TEINT + A
+// "Forte en goût"
+ORSEC + E
+// "Tracer dans le marbre"
+RAGER + V
+
+VENGEUR, SAIGNER, CHEVELU, BAROQUE, PRESUME
+
+LANGER, PAROLE, CRISER, PALIER, RETAPE

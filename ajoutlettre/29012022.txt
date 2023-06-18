@@ -1,0 +1,12 @@
+// "Papillon de jour"
+ASTER + Y
+// "Pousse sur les cailloux"
+CUVEE + H
+// "Fait équipe"
+MANTE + D
+// "Est utile au cadreur"
+CARME + A
+
+FROUSSE, BRODEUR, TAMISER, SENTIER, EMARGER
+
+CROQUE, LIBERE, PARIER, ROUSTE, MACHON

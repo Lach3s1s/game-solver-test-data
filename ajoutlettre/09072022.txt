@@ -1,0 +1,12 @@
+// "Il imite les brindilles"
+HAMPE + S
+// "De la filasse"
+POETE + U
+// "Kil de vin"
+INTRO + L
+// "Future vedette"
+EPRIS + O
+
+CAILLER, NYMPHEA, FRISBEE, PERCHER, INEPTIE
+
+GREVER, MOIRER, ORDURE, DAGUET, TROENE

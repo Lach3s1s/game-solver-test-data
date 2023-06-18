@@ -1,0 +1,12 @@
+// "Il mijote dans son plat"
+JANTE + I
+// "C'est lui le coupable"
+AFFUT + I
+// "Heure d'attente"
+OMBLE + P
+// "Provoquer une irritation"
+FARCE + H
+
+CROQUER, MAGNETO, LAISSER, COUVERT, LACHAGE
+
+LOUCHE, ROMAIN, ANIMER, TABLER, ROUGIR

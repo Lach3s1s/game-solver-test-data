@@ -1,0 +1,12 @@
+// "Chambre d'hôtel"
+LINGE + S
+// "Blé du Maroc"
+MARDI + H
+// "Masse de poils"
+FOUET + F
+// "Garnir de manchettes"
+TIRET + R
+
+VIBREUR, AGIOTER, MIRETTE, DEVINER, BEGUINE
+
+FRONCE, LOUEUR, ANIMER, GRATIN, EGARER

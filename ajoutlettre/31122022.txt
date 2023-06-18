@@ -1,0 +1,12 @@
+// "C'est tout un poème"
+TONNE + S
+// "Qui est dans le gaz"
+HUILE + M
+// "Tente de plaire"
+USITE + D
+// "Corne de berger"
+OPTER + M
+
+TRACTER, ANORMAL, PLACAGE, OUAILLE, TAMISER
+
+FRONDE, ABATTU, ETABLE, VOLUTE, CROSSE

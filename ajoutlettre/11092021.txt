@@ -1,0 +1,12 @@
+// "Il fait du propre"
+AGAVE + L
+// "Volée de coups"
+OUEST + R
+// "Elle cache le front"
+NAGER + F
+// "Côté face"
+NAVET + D
+
+TROQUER, PARIEUR, CEINDRE, TRANCHE, CANETON
+
+REMISE, VENTRE, FEINTE, COMETE, SERVIR

@@ -1,0 +1,12 @@
+// "Il fait le siège au stade"
+DINAR + G
+// "Prairie en altitude"
+PLAGE + A
+// "Taper dans le tas"
+PRISE + U
+// "Bar à tapas"
+BADGE + O
+
+CROCHER, ANORMAL, CANTINE, REMPLOI, CORNEEN
+
+DOUCHE, REAGIR, ALUNER, TRAMER, PRIERE

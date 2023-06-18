@@ -1,0 +1,12 @@
+// "Il est plutôt amical"
+PIANO + C
+// "Guère civil"
+RUSER + T
+// "Défaut de structure"
+ALLIE + F
+// "Mis à plat"
+LAPIN + A
+
+FREGATE, ROSATRE, BORDURE, FOURNIL, WHISKEY
+
+PANSER, LIMEUR, CABLER, FEINTE, PINCER

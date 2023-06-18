@@ -1,0 +1,12 @@
+// "Mis au parfum"
+VARIE + T
+// "Double poche"
+ABCES + E
+// "Engrais breton"
+GNOME + O
+// "Il a besoin d'énergie"
+MEROU + T
+
+DETENDU, REFLEXE, PIGMENT, CASAQUE, TRUELLE
+
+MIELLE, CREPER, PEIGNE, POELER, GRATIN
