@@ -7,7 +7,7 @@ ECHO Reading %ARGS_COUNT% arguments
 @echo off
 
 SET mydate=%1
-SET year=2022
+SET year=2021
 
 IF %ARGS_COUNT% == 0 (
     @echo on

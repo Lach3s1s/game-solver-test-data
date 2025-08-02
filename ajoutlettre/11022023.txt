@@ -1,0 +1,12 @@
+// "Face cachée ou naturelle"
+AVISE + G
+// "Faire la pluie et le beau temps"
+GENRE + R
+// "Bonbon au chocolat"
+RECTO + T
+// "Petit de fauve"
+GRIOT + N
+
+GRAVIER, OMETTRE, PARLEUR, DEFAITE, FAMILLE
+
+BRAMER, VEILLE, CLISSE, POINTE, TORDRE
