@@ -1,0 +1,12 @@
+// "Il a une bonne dynamique"
+PURGE + O
+// "Il vit dans la retraite"
+CRUEL + S
+// "Faire entrer dasn le répertoire"
+TIERS + L
+// "Ecureuil canadien"
+ISSUE + S
+
+PANNEAU, NATUREL, GORILLE, EMPATER, BRODEUR
+
+ANIMER, CROISE, SEYANT, RAVINE, COULIS

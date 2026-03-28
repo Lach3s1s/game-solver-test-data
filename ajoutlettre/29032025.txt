@@ -1,0 +1,12 @@
+// "C'est du vice"
+FAUTE + D
+// "Cacher les yeux"
+DARNE + B
+// "Cocher une carte"
+TRUIE + S
+// "Héroïne de Nabokov"
+ATOLL + I
+
+PREVENU, BASTION, COUVRIR, PIONCER, SIMPLET
+
+DENUDE, VOUTER, AVERER, PERIME, FERRET

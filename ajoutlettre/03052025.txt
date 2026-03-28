@@ -1,0 +1,12 @@
+// "Lame du camp"
+PLEIN + O
+// "Coup de pinceau"
+CHUTE + O
+// "Ca nous coupe le souffle"
+MATHS + E
+// "Elle est verte en ville"
+ECOLE + U
+
+MARINER, MEVENTE, PLACEUR, PLANETE, PINCARD
+
+TACLER, JAUGER, ROSSER, GARCON, QUARTO

@@ -1,0 +1,12 @@
+// "Fantasia au Magreb"
+ABORD + U
+// "Laisser peu d'espace"
+ASTER + S
+// "Lieu où tombent des pommes"
+EPINE + D
+// "On le suit à la messe"
+SEMIS + L
+
+TROUVER, CAPOTER, BRUYANT, COUPOLE, PERCEUR
+
+PETALE, ARONDE, BONITE, VEINER, MALTER
